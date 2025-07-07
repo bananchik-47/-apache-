@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}Register{% endblock %}
+{% block body %}
+<h2>Регистрация</h2>
+<form method="post">
+  <label>Имя: <input type="text" name="username" required></label><br>
+  <label>Пароль: <input type="password" name="password" required minlength="4"></label><br>
+  <input type="submit" value="Register">
+</form>
+<p>Есть аккаунт? <a href="/login">Войти</a></p>
+{% endblock %}

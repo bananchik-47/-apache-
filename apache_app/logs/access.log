@@ -1,0 +1,8 @@
+127.0.0.1 - - [10/Oct/2023:13:58:12 +0300] "GET /home.html HTTP/1.1" 200 2150 "https://google.com" "Mozilla/5.0 (X11; Linux x86_64)"
+192.168.1.5 - - [10/Oct/2023:14:05:47 +0300] "POST /api/users HTTP/1.1" 400 325 "-" "curl/8.1.2"
+203.0.113.17 - - [10/Oct/2023:14:12:33 +0300] "GET /products.html HTTP/1.1" 304 0 "https://myshop.com" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"
+10.25.3.11 - - [10/Oct/2023:14:18:54 +0300] "DELETE /api/item/42 HTTP/1.1" 204 0 "-" "PostmanRuntime/8.0.1"
+172.16.0.22 - - [10/Oct/2023:14:25:00 +0300] "PUT /api/settings HTTP/1.1" 201 123 "-" "Python-urllib/3.11"
+198.51.100.99 - - [10/Oct/2023:14:30:12 +0300] "GET /about.html HTTP/1.1" 200 1890 "https://bing.com" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+192.0.2.33 - - [10/Oct/2023:14:35:48 +0300] "PATCH /api/user/7 HTTP/1.1" 403 512 "-" "Insomnia/2023.3.0"
+127.0.0.1 - - [10/Oct/2023:14:40:00 +0300] "GET /dashboard HTTP/1.1" 500 1024 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1)"
