@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}Logs{% endblock %}
+{% block body %}
+<h2>Логи</h2>
+<form method="get">
+  <label>IP: <input type="text" name="ip" value="{{ request.args.get('ip','') }}"></label>
+  <label>Keyword: <input type="text" name="keyword" value="{{ request.args.get('keyword','') }}"></label>
+  <label>Date from: <input type="date" name="date_from" value="{{ request.args.get('date_from','') }}"></label>
+  <label>Date to: <input type="date" name="date_to" value="{{ request.args.get('date_to','') }}"></label>
+  <label>Limit: <input type="number" name="limit" value="{{ request.args.get('limit',100) }}"></label>
+  <input type="submit" value="Filter">
+</form>
+<table>
+  <tr><th>ID</th><th>IP</th><th>Date</th><th>Method</th><th>URL</th><th>Status</th><th>Size</th></tr>
+  {% for r in rows %}
+    <tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>
+  {% endfor %}
+</table>
+<p>Всего: {{ rows|length }}</p>
+<p><a href="/">Назад</a></p>
+{% endblock %}
